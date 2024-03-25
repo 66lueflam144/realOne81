@@ -1,5 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>RealOne-8-1</title><link>https://66lueflam144.github.io/realOne81</link><description>easy</description><copyright>RealOne-8-1</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://66lueflam144.github.io/realOne81</link></image><lastBuildDate>Mon, 25 Mar 2024 14:47:05 +0000</lastBuildDate><managingEditor>RealOne-8-1</managingEditor><ttl>60</ttl><webMaster>RealOne-8-1</webMaster><item><title>Hello</title><link>https://66lueflam144.github.io/realOne81/post/Hello.html</link><description># Don't you know That I am The Real One&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>RealOne-8-1</title><link>https://66lueflam144.github.io/realOne81</link><description>easy</description><copyright>RealOne-8-1</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://66lueflam144.github.io/realOne81</link></image><lastBuildDate>Mon, 25 Mar 2024 15:31:32 +0000</lastBuildDate><managingEditor>RealOne-8-1</managingEditor><ttl>60</ttl><webMaster>RealOne-8-1</webMaster><item><title>MD5 Learn</title><link>https://66lueflam144.github.io/realOne81/post/MD5%20Learn.html</link><description>&#13;
+# MD5&#13;
+&#13;
+&gt; Message-DigestAlgorithm 5&#13;
+&#13;
+![MD5](https://s3.bmp.ovh/imgs/2022/02/784b757cee5f7bf0.png)&#13;
+&#13;
+一种被广泛使用的**密码散列函数**，可以产生出一个&lt;u&gt;128位&lt;/u&gt;（16个字符(BYTES)）的散列值（hash value），用于确保信息传输完整一致。</description><guid isPermaLink="true">https://66lueflam144.github.io/realOne81/post/MD5%20Learn.html</guid><pubDate>Mon, 25 Mar 2024 15:31:01 +0000</pubDate></item><item><title>Hello</title><link>https://66lueflam144.github.io/realOne81/post/Hello.html</link><description># Don't you know That I am The Real One&#13;
 Just Shout It Out&#13;
 &#13;
 hello test for myself。</description><guid isPermaLink="true">https://66lueflam144.github.io/realOne81/post/Hello.html</guid><pubDate>Mon, 25 Mar 2024 11:54:42 +0000</pubDate></item></channel></rss>
